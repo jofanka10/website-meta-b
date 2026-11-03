@@ -28,4 +28,3 @@ Buka `index.html` di browser (butuh internet untuk CDN Tailwind CSS, Three.js, K
 | `js/main.js` | Navigasi slide + latar 3D Three.js |
 
 **Sumber:** Mirjalili (2015) doi:10.1016/j.advengsoft.2015.01.010 · Saremi dkk. (2017) doi:10.1016/j.advengsoft.2017.01.004 · Abualigah & Diabat (2021) doi:10.1007/s10586-020-03075-5 · Zhao dkk. (2019) doi:10.24507/ijicic.15.05.1967
-# website-meta-b

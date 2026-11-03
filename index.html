@@ -164,7 +164,7 @@
      <div class="formula">$$X_i^t=\dfrac{(X_i^t-a_i)(d_i^t-c_i^t)}{b_i-a_i}+c_i^t\quad(\text{normalisasi ke batas})$$</div>
      <div class="formula">$$\mathrm{Ant}_i^t=\dfrac{R_A^t+R_E^t}{2}$$</div>
      <p class="text-xs text-slate-400 -mt-1">R<sub>A</sub>: jalan acak sekitar antlion terpilih (roulette), R<sub>E</sub>: sekitar elite.</p>
-     <div class="formula">$$\text{jika } f(\mathrm{Ant}_i)<f(\mathrm{Antlion}_j)\ \Rightarrow\ \mathrm{Antlion}_j=\mathrm{Ant}_i$$</div>
+     <div class="formula">$$f(\mathrm{Ant}_i^t) < f(\mathrm{Antlion}_j^t) \;\Longrightarrow\; \mathrm{Antlion}_j^{t+1}=\mathrm{Ant}_i^t$$</div>
     </div>
     <button class="btn primary mt-3" onclick="goSlideId('alo-viz')">Lihat visualisasinya →</button>
    </div>
@@ -466,5 +466,17 @@
 <script src="js/viz-goa.js"></script>
 <script src="js/viz-sched.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+  // Render seluruh ekspresi LaTeX setelah KaTeX dan auto-render dimuat.
+  renderMathInElement(document.body, {
+    delimiters: [
+      { left: "$$", right: "$$", display: true },
+      { left: "$", right: "$", display: false }
+    ],
+    throwOnError: false
+  });
+</script>
+
 </body>
 </html>
